@@ -1,0 +1,112 @@
+:root {
+    --page-background: hsl(310, 6%, 21%);
+    --nav-background: #ffffff;
+    --card-background: #ffffff;
+    --accent-color: #dc2626;
+    --text-color: #f70505;
+    --nav-text-color: #020202;
+    --border-color: #cccccc;
+
+    --main-font: Arial, sans-serif;
+    --base-font-size: 16px;
+
+    --corner-radius: 10px;
+    --form-width: 360px;
+    --image-width: 320px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: hsl(310, 6%, 21%);
+    color: #f70505;
+    margin: 0;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    background-color: var(--nav-background);
+    padding: 16px;
+}
+
+
+nav a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+
+form {
+    width: var(--form-width);
+    margin: 30px auto;
+    padding: 25px;
+
+    background-color: var(--card-background);
+
+    border: 2px solid var(--border-color);
+    border-radius: var(--corner-radius);
+}
+
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: white;
+
+    border: none;
+    padding: 12px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    border-radius: var(--corner-radius);
+}
+
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+
+.gym-image {
+    display: block;
+    width: var(--image-width);
+    height: auto;
+
+    margin: 25px auto;
+
+    border-radius: var(--corner-radius);
+}
