@@ -57,4 +57,30 @@ The two main entities in the application are:
 
 ## Entity Relationship Diagram
 
+The ERD shows the entities in the Gym Tracker database, their attributes, and how they are related. Its purpose is to show the overall structure of the database before the tables are created.
+
 ![Gym Tracker ERD](images/gymtracker-erd.png)
+
+## Relations
+
+The relations diagram shows how the entities from the ERD will be represented as database tables. It also shows the primary keys and the foreign key used to connect an exercise entry to a user.
+
+**USER**(`UserID`, FirstName, LastName, Email, Password)
+
+**EXERCISE_ENTRY**(`ExerciseEntryID`, UserID, ExerciseName, Weight, Sets, Repetitions)
+
+- `UserID` is the primary key of USER.
+- `ExerciseEntryID` is the primary key of EXERCISE_ENTRY.
+- `UserID` in EXERCISE_ENTRY is a foreign key that references USER.
+
+![Gym Tracker Relations](images/gymtracker-relations.png)
+
+## Normalization
+
+The relations are in **1NF, 2NF, and 3NF**.
+
+- **1NF:** Each attribute contains one value and each relation has a primary key.
+- **2NF:** Each relation has a single-attribute primary key, so every non-key attribute depends on the whole primary key.
+- **3NF:** The non-key attributes depend on the primary key and not on another non-key attribute.
+
+No changes are needed because the relations already meet 1NF, 2NF, and 3NF.

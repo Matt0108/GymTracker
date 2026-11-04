@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Relations" id="gymtracker-relations">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="USER&#xa;----------------------&#xa;UserID (PK)&#xa;FirstName&#xa;LastName&#xa;Email&#xa;Password" style="rounded=0;whiteSpace=wrap;html=0;align=left;verticalAlign=top;spacing=12;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="120" y="170" width="260" height="230" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="EXERCISE_ENTRY&#xa;----------------------&#xa;ExerciseEntryID (PK)&#xa;UserID (FK)&#xa;ExerciseName&#xa;Weight&#xa;Sets&#xa;Repetitions" style="rounded=0;whiteSpace=wrap;html=0;align=left;verticalAlign=top;spacing=12;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="600" y="150" width="300" height="270" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="UserID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
