@@ -84,3 +84,24 @@ The relations are in **1NF, 2NF, and 3NF**.
 - **3NF:** The non-key attributes depend on the primary key and not on another non-key attribute.
 
 No changes are needed because the relations already meet 1NF, 2NF, and 3NF.
+
+## Database Implementation
+
+The database was implemented using **MySQL**.
+
+The two tables implemented are:
+
+- `users`
+- `exercise_entries`
+
+The `exercise_entries` table is related to the `users` table through `user_id`. Each exercise entry belongs to one user, and one user can have many exercise entries.
+
+[View schema.sql](schema.sql)
+
+### Table Creation
+
+![Successful Table Creation](database/screenshots/table-creation.png)
+
+### Created Tables
+
+![Created Tables](database/screenshots/created-tables.png)
