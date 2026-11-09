@@ -57,7 +57,7 @@ The two main entities in the application are:
 
 ## Entity Relationship Diagram
 
-The ERD shows the entities in the Gym Tracker database, their attributes, and how they are related. Its purpose is to show the overall structure of the database before the tables are created.
+The ERD shows the entities in the Gym Tracker database, their attributes, and how they are related.
 
 ![Gym Tracker ERD](images/gymtracker-erd.png)
 
@@ -79,12 +79,6 @@ The relations diagram shows how the entities from the ERD will be represented as
 
 The relations are in **1NF, 2NF, and 3NF**.
 
-- **1NF:** Each attribute contains one value and each relation has a primary key.
-- **2NF:** Each relation has a single-attribute primary key, so every non-key attribute depends on the whole primary key.
-- **3NF:** The non-key attributes depend on the primary key and not on another non-key attribute.
-
-No changes are needed because the relations already meet 1NF, 2NF, and 3NF.
-
 ## Database Implementation
 
 The database was implemented using **MySQL**.
@@ -100,8 +94,8 @@ The `exercise_entries` table is related to the `users` table through `user_id`. 
 
 ### Table Creation
 
-![Successful Table Creation](database/screenshots/table-creation.png)
+![Successful Table Creation](database/screenshots/tablecreation.png)
 
 ### Created Tables
 
-![Created Tables](database/screenshots/created-tables.png)
+![Created Tables](database/screenshots/createdtables.png)
